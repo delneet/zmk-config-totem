@@ -96,6 +96,11 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <16 27>;
         };
+
+        hyper {
+            bindings = <&kp LS(LA(LC(LGUI)))>;
+            key-positions = <33 34>;
+        };
     };
 
     macros {
@@ -137,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q        &kp W       &kp F       &kp P        &kp G        &kp J      &kp L        &kp U       &kp Y       &kp SEMI
-       &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp D        &kp H      &mt RSHFT N  &mt RGUI E  &mt RALT I  &mt RCTRL O
-&kp Q  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp K      &kp M        &kp COMMA   &kp DOT     &kp FSLH     &kp BSLH
-                                &kp DEL     &lt NAV TAB  &kp ENTER    &kp SPACE  &lt SYM ESC  &kp BSPC
+       &kp Q        &kp W       &kp F       &kp P        &kp G      &kp J      &kp L          &kp U       &kp Y       &kp SEMI
+       &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp D      &kp H      &mt RSHFT N    &mt RGUI E  &mt RALT I  &mt RCTRL O
+&kp Q  &kp Z        &kp X       &kp C       &kp V        &kp B      &kp K      &kp M          &kp COMMA   &kp DOT     &kp FSLH     &kp BSLH
+                                &kp DEL     &lt NAV TAB  &kp ESC    &kp SPACE  &lt SYM ENTER  &kp BSPC
             >;
         };
 
@@ -275,4 +280,5 @@
         };
     };
 };
+
 

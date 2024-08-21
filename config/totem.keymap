@@ -30,6 +30,10 @@
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
 };
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     combos {
@@ -323,13 +327,12 @@
         dev {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp LG(LS(R))  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans         &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp LG(LS(P))  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LS(C))  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans
                         &trans  &trans  &trans    &trans         &trans      &trans
             >;
         };
     };
 };
-
 
 
